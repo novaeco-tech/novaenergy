@@ -1,4 +1,4 @@
 # NovaEnergy Enabler
 
 Welcome to the `NovaEnergy` Horizontal Enabler.
-Renewable energy production, distribution, and auditing.
+Renewable grid balancing and vehicle-to-grid energy coordination.
