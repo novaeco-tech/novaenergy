@@ -33,13 +33,13 @@ graph TD
     UI -->|REST| API[NovaEnergy API]
     
     subgraph "The Grid Edge (NovaInfra)"
-        API -->|Command (OCPP)| Infra[NovaInfra]
-        Infra -->|MQTT| EV[EV Charger]
-        Infra -->|Modbus| Solar[Solar Inverter]
+        API -->|"Command (OCPP)"| Infra["NovaInfra"]
+        Infra -->|MQTT| EV["EV Charger"]
+        Infra -->|Modbus| Solar["Solar Inverter"]
     end
 
     subgraph "The Brain"
-        Infra -->|Telemetry| Mind[NovaMind]
+        Infra -->|Telemetry| Mind["NovaMind"]
         Mind -->|Forecast: Low Sun| API
     end
 
